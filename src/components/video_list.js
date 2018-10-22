@@ -7,15 +7,21 @@ const VideoList = (props) => {
             <VideoListItem 
                 onUserSelected={props.onVideoSelect}           
                 key={video.etag} 
-                video={video} />
+                video={video} 
+                />
         );
     });
+
 
     return (
         <ul className="list-group">
             {videoItems}
-        </ul>
+                 </ul>
+
+
     );
 };
 
 export default VideoList;
+
+
